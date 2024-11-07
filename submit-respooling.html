@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submission Received</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function displayFormData() {
+            const query = new URLSearchParams(window.location.search);
+            const output = document.getElementById("formDataDisplay");
+
+            query.forEach((value, key) => {
+                const item = document.createElement("p");
+                item.innerHTML = `<strong>${key}:</strong> ${decodeURIComponent(value)}`;
+                output.appendChild(item);
+            });
+        }
+        window.onload = displayFormData;
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Thank You for Your Submission!</h1>
+    </header>
+
+    <main>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="fixin.html">The Fixin's</a></li>
+            </ul>
+        </nav>
+
+        <section class="form-container">
+            <h2>Submission Details</h2>
+            <div id="formDataDisplay"></div>
+            <a href="contact.html" class="btn">Submit Another Request</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Charles Looney</p>
+    </footer>
+</body>
+</html>

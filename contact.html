@@ -5,13 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Home">
 <meta name="keywords" content="Bait, Tackle, Fishing">
-<title>Home</title>
+<title>Respooling Contact</title>
 <link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="responsivestyles.css">
 </head>
 <body>
     <header>
-        <h1>Howard's Lakeside General Store</h1>
+        <h1>Respooling and Contact Us</h1>
     </header>
 <main>
     <nav class="navbar">
@@ -21,14 +21,34 @@
             <li><a href="fixin.html">The Fixin's</a></li>
         </ul>
     </nav>
-    <div class="contact-container">
-        <div class="contact-card">
-            <h3>Contact Us</h3>
-            <p><strong>Address:</strong> 123 Lakeside Dr, Springfield, MO</p>
-            <p><strong>Email:</strong> <a href="mailto:info@howardslakeside.com">info@howardslakeside.com</a></p>
-            <p><strong>Phone:</strong> <a href="tel:+1234567890">(123) 456-7890</a></p>
-        </div>
-    </div>    
+    <div class="form-container">
+        <h2>Contact Us for Respooling Service</h2>
+        <form action="submit-respooling.html" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone">
+    
+            <label for="line-type">Line Type:</label>
+            <select id="line-type" name="line-type" required>
+                <option value="mono">Monofilament</option>
+                <option value="braid">Braided</option>
+                <option value="fluoro">Fluorocarbon</option>
+            </select>
+    
+            <label for="line-weight">Line Weight (lb):</label>
+            <input type="number" id="line-weight" name="line-weight" required>
+    
+            <label for="message">Additional Details:</label>
+            <textarea id="message" name="message" rows="4" placeholder="Enter any additional details..."></textarea>
+    
+            <button type="submit">Submit Request</button>
+        </form>
+    </div>        
 </main>
     <footer>
         <p>© 2024 Charles Looney</p>
