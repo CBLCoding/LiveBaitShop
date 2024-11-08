@@ -1,0 +1,82 @@
+/* Mobile Devices: Up to 600px */
+@media (max-width: 600px) {
+    /* Navbar */
+    .navbar ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    /* Section */
+    .about-section {
+        padding: 10px;
+        margin: 20px 10px;
+        font-size: 0.9em;
+    }
+
+    .about-section h2 {
+        font-size: 1.5em;
+    }
+
+    /* Form Container */
+    .form-container {
+        padding: 15px;
+        max-width: 90%;
+    }
+
+    /* Table */
+    table {
+        font-size: 0.9em;
+    }
+
+    thead th {
+        font-size: 0.9em;
+    }
+
+    tbody td {
+        padding: 8px;
+    }
+}
+
+/* Tablets: 600px - 992px */
+@media (min-width: 601px) and (max-width: 992px) {
+    .navbar ul {
+        gap: 1.5rem;
+    }
+
+    .about-section {
+        max-width: 90%;
+    }
+
+    .form-container {
+        max-width: 80%;
+    }
+
+    /* Buttons */
+    button, .btn {
+        font-size: 0.95rem;
+    }
+}
+
+/* Desktops: 992px and above */
+@media (min-width: 993px) {
+    .navbar ul {
+        gap: 2rem;
+    }
+
+    .about-section {
+        max-width: 70%;
+    }
+
+    .form-container {
+        max-width: 60%;
+    }
+
+    /* Larger Font Sizes */
+    .about-section p {
+        font-size: 1.1em;
+    }
+
+    table {
+        max-width: 90%;
+    }
+}
