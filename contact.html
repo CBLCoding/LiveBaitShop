@@ -17,7 +17,7 @@
     <nav class="navbar">
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contact.html">Service</a></li>
             <li><a href="fixin.html">The Fixin's</a></li>
         </ul>
     </nav>
@@ -35,9 +35,10 @@
     
             <label for="line-type">Line Type:</label>
             <select id="line-type" name="line-type" required>
-                <option value="mono">Monofilament</option>
-                <option value="braid">Braided</option>
-                <option value="fluoro">Fluorocarbon</option>
+                <option value="" disabled selected>Select Line Type</option>
+                <option value="monofilament">Monofilament</option>
+                <option value="braided">Braided</option>
+                <option value="fluorocarbon">Fluorocarbon</option>
             </select>
     
             <label for="line-weight">Line Weight (lb):</label>
@@ -48,6 +49,9 @@
     
             <button type="submit">Submit Request</button>
         </form>
+    </div>
+    <div class="video-container">
+        <iframe src="respoolvideo.mp4" title="Respooling Service Video" allowfullscreen></iframe>
     </div>        
 </main>
     <footer>
