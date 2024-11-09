@@ -35,6 +35,14 @@
     tbody td {
         padding: 8px;
     }
+
+    img {
+        display: none;
+    }
+
+    iframe {
+        display: none;
+    }
 }
 
 /* Tablets: 600px - 992px */
